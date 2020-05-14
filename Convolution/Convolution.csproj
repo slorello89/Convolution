@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\zero.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="resources\zero.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Emgu.CV.runtime.windows" Version="4.2.0.3662" />
+  </ItemGroup>
+
+</Project>
